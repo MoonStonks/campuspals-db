@@ -38,6 +38,7 @@ router.post("/add", (req, res) => {
   const website = req.body.website;
   const description = req.body.description;
   const university = req.body.university;
+  const email = req.body.email;
 
   const newClub = new Club({
     clubName,
@@ -45,6 +46,7 @@ router.post("/add", (req, res) => {
     website,
     description,
     university,
+    email,
   });
 
   newClub
