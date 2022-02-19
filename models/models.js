@@ -30,6 +30,7 @@ const tutorSchema = new Schema({
   website: String,
   rate: String,
   photoURL: String,
+  university: Number,
 });
 
 const Club = mongoose.model("Club", clubSchema);

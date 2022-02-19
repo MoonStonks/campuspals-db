@@ -51,6 +51,7 @@ router.post("/add", (req, res) => {
   const website = req.body.website;
   const rate = req.body.rate;
   const photoURL = req.body.photoURL;
+  const university = req.body.university;
 
   const newTutor = new Tutor({
     title,
@@ -59,6 +60,7 @@ router.post("/add", (req, res) => {
     website,
     rate,
     photoURL,
+    university,
   });
 
   newTutor
