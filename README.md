@@ -22,7 +22,8 @@ Example POST req queries:
     "description": "Available to tutor all MATH2XX level courses for UBC.",
     "website": "example.com",
     "rate": "30/hr CAD",
-    "photoURL": "https://i.imgur.com/Tk6jIxy.jpg"
+    "photoURL": "https://i.imgur.com/Tk6jIxy.jpg",
+    "university": 0
 
 }
 
