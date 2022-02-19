@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const sfuClubs = require("../sfuclubs.json");
 let { Club } = require("../models/models");
 
 router.route("/").get((req, res) => {
@@ -22,6 +23,19 @@ router.get("/:id", (req, res) => {
   Club.findById(req.params.id) // find it by id
     .then((user) => res.send(user)) //then return as json ; else return error
     .catch((err) => res.status(400).json("Error: " + err));
+});
+
+router.route("/submit").post(async (req, res) => {
+  console.log("hi");
+  await Promise.all(
+    sfuClubs.map(async (club) => {
+      const entry = new Club({
+        ...club,
+      });
+      await entry.save();
+    })
+  );
+  res.send("ok");
 });
 
 /**

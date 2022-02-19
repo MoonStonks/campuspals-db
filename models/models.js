@@ -7,12 +7,13 @@ const Schema = mongoose.Schema;
 
 // trim is whitespace at end - if include whitespace it gets trimmed off
 const clubSchema = new Schema({
-  clubName: {
-    type: String,
-    required: true,
-    unique: true,
-    trim: true,
-  },
+  // clubName: {
+  //   type: String,
+  //   required: true,
+  //   unique: true,
+  //   trim: true,
+  // },
+  clubName: String,
   imgURL: String,
   website: String,
   description: String,
