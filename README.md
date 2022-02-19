@@ -28,12 +28,13 @@ Example POST req queries:
 }
 
 {
-    "clubName": "SuperStonk",
+    "clubName": "UBC SuperStonk5",
     "imgURL": "https://i.imgur.com/kFxFyYa.png",
     "website": "https://www.reddit.com/r/wallstreetbets/",
-    "description": "Club to make stonks go up @UBC.",
+    "description": "UBC Club to make stonks go up @UBC.",
     "university": 0,
-    "email": "helloworld@gmail.com"
+    "email": "helloworld@gmail.com",
+    "tags": ["social", "cultural", "tech"]
 }
 
 ```

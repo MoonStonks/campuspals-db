@@ -19,6 +19,7 @@ const clubSchema = new Schema({
   description: String,
   university: Number,
   email: String,
+  tags: [String],
 });
 
 const tutorSchema = new Schema({
